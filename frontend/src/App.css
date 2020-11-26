@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  background: url('./bgc/bgc4.png');
+  background-size: 100% 100%;
+  padding: 0 50px;
+}
+
+li {
+  flex:1;
+  list-style: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none
+}
+
+a:hover {
+  color: #000;
+}
+
+button {
+  font-family: arial, sans-serif;
+  border: none; 
+  outline: none;
+}
+
+.content {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.logoutBTN {
+  float: right;
+  height: 40px;
+  width: 25%;
+  background: url('./bgc/bgc4.png');
+  color: #fff;
+  font: bolder 15px 'Josefin Sans';
+  padding: 15px;
+}
+
+@media screen and (max-width: 870px) {
+  .content {
+      width: 90%;
+      margin: 10px auto;
+  }
+
+  ul {
+    padding: 0 10px;
+  }
+
+  ul li {
+    font-size: 18px;
+  }
+}
